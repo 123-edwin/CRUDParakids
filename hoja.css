@@ -46,3 +46,241 @@ body{
         background-position: 100% 100%;
     }
 }
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  
+  
+/* The button used to open the sidebar */
+.openbtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(17, 17, 17, 0);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  z-index: 1;
+}
+
+.openbtn:hover {
+  background-color: #555555bb; /* Cambio de color de fondo cuando el cursor se posiciona sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave durante 0.3 segundos */
+}
+
+
+  
+  .openbtn:hover {
+    color: white;
+  }
+
+  #uno.selected {
+   color: white;
+  }
+  #dos.selected {
+    color: white;
+  }
+  #tres.selected {
+    color: white;
+  }
+  
+
+  #titulo {
+    text-align: center; /* Centrar el texto dentro del header */
+    position: fixed; /* Fijar el header en la parte superior de la página */
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+    padding: 20px 0; /* Espaciado interno superior e inferior */
+    z-index: 1; /* Asegurar que esté sobre el contenido */
+    color: white; /* Color del texto */
+}
+
+#footer {
+  font-family:'Courier New', Courier, monospace;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+
+}
+
+  
+#listaTortas li {
+  /* Estilos para todos los elementos de lista dentro de #listaTortas */
+  /* Por ejemplo: */
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(206, 152, 152);
+  border: 1px solid #ccc;
+}
+
+ 
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+  /*TABLA RIMBOMBANTE PORQUE MATARON A BOOTSTRAP*/
+
+  /* Estilos para el formulario */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Para incluir el padding y el borde en el ancho total */
+}
+
+small {
+  color: #6c757d; /* Color de texto de las etiquetas pequeñas */
+}
+
+/* Estilos para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  
+}
+
+.table td {
+  color: #f1f1f1;
+}
+
+.table th {
+  background-color: rgba(179, 67, 67, 0.36);
+  border-radius: 5px;
+  color: #111;
+}
+
+.table tbody tr:nth-child(even) {
+  color: #f1f1f1;
+}
+
+
+
+  /*BOTONES RIMBOMBANTES PORQUE MATARON A BOOTSTRAP POBRECITO CAON*/
+
+  /* Estilos para los botones de eliminar, editar y enviar*/
+
+#enviarBtn {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e6e1e1;
+  background-color: #0b9a3d;
+  border-color: #129f48;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.btn-danger {
+  font-family:cursive;
+  color: #fff;
+  background-color: #4335dc;
+  border-color: #000000;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #9b0c35;
+  border-color: #c10d19;
+}
+
+.btn-danger i {
+  vertical-align: middle;
+}
+
+.btn-warning {
+  font-family: cursive;
+  color: #fff;
+  background-color: #4335dc;
+  border-color: #000000;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #23c84c;
+  border-color: #0aad20;
+}
+
+.btn-warning i {
+  vertical-align: middle;
+}
+
+#img {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ejemplo de sombra suave */
+  
+}
