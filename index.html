@@ -45,6 +45,28 @@
       <input type="number" class="form-control" id="precioInput" placeholder="Ingrese el precio" required>
       <label for="cantidad1">Cantidad</label>
       <input type="number" class="form-control" id="cantidadInput" placeholder="Ingrese la cantidad" required>
+
+      <div id="checkboxes">
+        <label for="cb1">Salsa roja</label>
+        <input type="checkbox" id="cb1" value="Roja" name="salsa">
+        <label for="cb1">Salsa verde</label>
+        <input type="checkbox" id="cb1" value="Verde" name="salsa">
+      </div>
+
+      <div id="radios">
+        <label for="rd1">Pica</label>
+        <input type="radio" id="rd1" value="Pica" name="Picor">
+        <label for="rd2">No pica</label>
+        <input type="radio" id="rd2" value="No pica" name="Picor">
+      </div>
+
+      <div id="selects">
+        <label for="sl1">Tipo de plato</label>
+        <select name="platos" id="sl1">
+          <option value="Chido">Chido</option>
+          <option value="Feo">Feo</option>
+        </select>
+      </div>
     </div>
     <button  id="enviarBtn" class="btn btn-success" style="margin-bottom: 30px;" type="button" onclick="pandur()">Enviar</button>
     <button type="button" id="cancelarBtn" class="btn-danger">Cancelar</button>
@@ -56,6 +78,9 @@
             <th scope="col">Tipo</th>
             <th scope="col">Precio</th>
             <th scope="col">Cantidad</th>
+            <th scope="col">Salsa</th>
+            <th scope="col">Picor</th>
+            <th scope="col">Plato</th>
             <th scope="col">Operaciones</th>
           </tr>
         </thead>
